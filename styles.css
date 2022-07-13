@@ -1,0 +1,42 @@
+*  {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.hero-section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.sketch-section {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    height: 75vh;
+    width: 75vh;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.cell {
+    width: 100%;
+    flex: auto;
+}
