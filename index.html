@@ -10,11 +10,30 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
+    <div class="header">
+        <p>Etch a Sketch</p>
+    </div>
     <div class="container">
-        <div class="hero-section">
-            <h1>hero section</h1>
+        <div class="sidebar">
+            <div class="choice-container">
+                <img src="./svgs/reload.svg">
+                <button id="reloadGridBtn">Reload</button>
+            </div>
+            <div class="sub-choice-container">
+                <button><img src="./svgs/remove.svg" id="reduceGridSizeBtn"></button>
+                <label id="gridSizeLabel">16x16</label>
+                <button><img src="./svgs/add.svg" id="increaseGridSizeBtn"></im></button>
+            </div>
+            <div class="choice-container">
+                <img src="./svgs/delete.svg">
+                <button id="clearGridBtn">Clear</button>
+            </div>
+            <div class="choice-container">
+                <img src="./svgs/hashtag.svg">
+                <button id="eraseBtn">Eraser</button>
+            </div>
         </div>
-        <div class="sketch-section">
+        <div class="canvas">
             <div class="grid-container"></div>
         </div>
     </div>
