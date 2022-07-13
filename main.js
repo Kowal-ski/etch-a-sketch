@@ -6,9 +6,21 @@ function createGird() {
         for (y = 1; y <= 16; y++) {
             let cell = document.createElement('div');
             cell.setAttribute('class', 'cell');
+            cell.addEventListener('mouseover', () => {
+                if (mouseDown == true) {
+                    cell.style.background = 'black';
+                }
+            })
+            cell.addEventListener('mousedown', () => {
+                cell.style.background = 'black';
+            })
             column.appendChild(cell);
         }
     }
 }
+
+let mouseDown = false
+document.body.onmousedown = () => (mouseDown = true)
+document.body.onmouseup = () => (mouseDown = false)
 
 createGird();
